@@ -7,7 +7,8 @@
 }
 .Ts_dark_overlay {
     background-color: rgba(0,0,0,0.5);
-    height: 120%;
+    z-index: 1;
+    height: 140%;
     margin-top: -10%;
     padding: 20%;
 }
