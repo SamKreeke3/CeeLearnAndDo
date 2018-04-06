@@ -12,6 +12,25 @@
     margin-top: -10%;
     padding: 20%;
 }
+#Ts_navbar {
+    background-color: #4E84C4;
+    border: 0px solid transparent;
+}
+#Ts_navbar li a{
+    color: #fff;
+}
+#Ts_navbar li a:hover {
+    color: #3e699c;
+}
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+.navbar-default .navbar-brand:hover {
+    color: #3e699c;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: #3e699c;
+}
 /*END Tyas CSS*/
 /*Sam CSS*/
 
