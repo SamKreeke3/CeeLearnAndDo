@@ -1,4 +1,17 @@
-﻿.Ts_header {
+﻿/*Tyas CSS*/
+.Ts_header {
     background-image: url('../Images/Home-header-background.jpeg');
     background-size: cover;
+    padding-top:90px;
+    color: #fff;
 }
+.Ts_dark_overlay {
+    background-color: rgba(0,0,0,0.5);
+    height: 120%;
+    margin-top: -10%;
+    padding: 20%;
+}
+/*END Tyas CSS*/
+/*Sam CSS*/
+
+/*END Sam CSS*/
