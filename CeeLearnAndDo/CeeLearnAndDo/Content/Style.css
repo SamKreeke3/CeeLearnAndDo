@@ -12,8 +12,12 @@
     margin-top: -10%;
     padding: 20%;
 }
+#Ts_navbar.top-nav-collapse {
+    background-color: rgba(0,0,0,0.5);
+    border: 0px solid transparent;
+}
 #Ts_navbar {
-    background-color: #4E84C4;
+    background-color: rgba(0,0,0, 0.0);
     border: 0px solid transparent;
 }
 #Ts_navbar li a{
@@ -29,7 +33,7 @@
     color: #3e699c;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    background-color: #3e699c;
+    background-color: rgba(62, 105, 156, 0.7);
 }
 #Ts_navbar .active a:hover {
     color: #4E84C4;
