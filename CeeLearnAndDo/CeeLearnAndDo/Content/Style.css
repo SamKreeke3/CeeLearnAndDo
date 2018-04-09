@@ -50,7 +50,9 @@
 }
 /*END Tyas CSS*/
 /*Sam CSS*/
-sm_login_buttons {
-    float: right;
+.sm_ceelearnanddo_logo {
+    margin-top: 10%;
+    font-family: monospace;
+    font-size: 120px;
 }
 /*END Sam CSS*/
