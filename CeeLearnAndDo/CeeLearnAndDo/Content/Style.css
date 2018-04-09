@@ -50,7 +50,7 @@
 }
 /*END Tyas CSS*/
 /*Sam CSS*/
-sm-scroll-down-button {
-    background-image: url("../Images/scroll-down-button.png");
+sm_login_buttons {
+    float: right;
 }
 /*END Sam CSS*/
