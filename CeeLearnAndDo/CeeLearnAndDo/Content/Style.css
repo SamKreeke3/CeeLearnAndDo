@@ -45,6 +45,8 @@
     z-index: 999;
     font-size: 30px;
     scroll-behavior: smooth;
+    color: #000;
+    opacity: 0.5;
 }
 /*END Tyas CSS*/
 /*Sam CSS*/
