@@ -26,5 +26,12 @@ namespace CeeLearnAndDo.Controllers
 
             return View();
         }
+
+        public ActionResult Articles()
+        {
+            ViewBag.Message = "Articles page";
+
+            return View();
+        }
     }
 }
