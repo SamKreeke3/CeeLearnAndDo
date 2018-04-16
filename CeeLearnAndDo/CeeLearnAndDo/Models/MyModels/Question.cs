@@ -14,6 +14,6 @@ namespace CeeLearnAndDo.Models.MyModels
         public bool Published { get; set; }
 
         public ApplicationUser User { get; set; }
-        public int UserId { get; set; }
+        public string UserId { get; set; }
     }
 }
