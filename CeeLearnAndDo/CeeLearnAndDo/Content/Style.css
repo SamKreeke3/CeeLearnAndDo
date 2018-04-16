@@ -50,6 +50,10 @@
 }
 /*END Tyas CSS*/
 /*Sam CSS*/
+    /*Fake bootstrap*/
+    .bg-grey
+    /*END fake bootstrap*/
+
 .sm_ceelearnanddo_logo {
     margin-top: 10%;
     font-family: monospace;
