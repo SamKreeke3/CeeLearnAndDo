@@ -22,7 +22,9 @@ namespace CeeLearnAndDo.Models.MyModels
 
         public bool Published { get; set; }
 
+        [ScaffoldColumn(false)]
         public ApplicationUser User { get; set; }
+        [ScaffoldColumn(false)]
         public string UserId { get; set; }
     }
 }

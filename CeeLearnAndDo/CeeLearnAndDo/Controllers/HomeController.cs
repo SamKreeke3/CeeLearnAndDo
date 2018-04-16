@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CeeLearnAndDo.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +9,8 @@ namespace CeeLearnAndDo.Controllers
 {
     public class HomeController : Controller
     {
+        private ApplicationDbContext db = new ApplicationDbContext();
+
         public ActionResult Index()
         {
             return View();
@@ -32,6 +35,14 @@ namespace CeeLearnAndDo.Controllers
             ViewBag.Message = "Articles page";
 
             return View();
+        }
+        public ActionResult Questions()
+        {
+            ViewBag.Message = "Questions page";
+
+            var questions = db.Questions.ToList();
+
+            return View(questions);
         }
     }
 }

@@ -48,12 +48,17 @@
     color: #000;
     opacity: 0.5;
 }
+.Ts_Questions {
+    background-color: #fff;
+    padding: 10px 20px;
+    margin: auto;
+    margin-bottom: 10px;
+}
 /*END Tyas CSS*/
 /*Sam CSS*/
-    /*Fake bootstrap*/
-    .bg-grey
-    /*END fake bootstrap*/
-
+/*Fake bootstrap*/
+.bg-grey
+/*END fake bootstrap*/
 .sm_ceelearnanddo_logo {
     margin-top: 10%;
     font-family: monospace;

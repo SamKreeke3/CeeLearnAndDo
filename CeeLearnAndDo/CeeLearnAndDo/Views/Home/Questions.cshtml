@@ -1,0 +1,22 @@
+﻿@model IEnumerable<CeeLearnAndDo.Models.MyModels.Question>
+
+@{
+    ViewBag.Title = "Questions";
+}
+
+<h2>Questions</h2>
+<div class="Ts_Questions_container col-lg-12">
+@foreach (var item in Model) {
+    <div class="Ts_Questions justify-content-between col-lg-9">
+    <div class="Ts_Questions_title">
+            @Html.DisplayFor(modelItem => item.Title)
+     </div>
+        <div class="Ts_questions_content">
+            @Html.DisplayFor(modelItem => item.Content)
+         </div>
+        <div class="Ts_Questions_date">
+            @Html.DisplayFor(modelItem => item.Date)
+        </div>
+    </div>
+}
+</div>
