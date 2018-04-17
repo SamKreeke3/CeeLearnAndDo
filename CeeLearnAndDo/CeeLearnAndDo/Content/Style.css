@@ -54,14 +54,19 @@
     margin: auto;
     margin-bottom: 10px;
 }
-/*END Tyas CSS*/
-/*Sam CSS*/
-/*Fake bootstrap*/
-.bg-grey
-/*END fake bootstrap*/
-.sm_ceelearnanddo_logo {
-    margin-top: 10%;
-    font-family: monospace;
-    font-size: 120px;
+.Ts_Questions h2{
+    color:#000;
 }
+
+
+    /*END Tyas CSS*/
+    /*Sam CSS*/
+    /*Fake bootstrap*/
+    .bg-grey
+    /*END fake bootstrap*/
+    .sm_ceelearnanddo_logo {
+        margin-top: 10%;
+        font-family: monospace;
+        font-size: 120px;
+    }
 /*END Sam CSS*/
