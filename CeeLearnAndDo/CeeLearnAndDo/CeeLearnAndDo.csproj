@@ -334,13 +334,14 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
-    <Content Include="Views\Home\Articles.cshtml" />
     <Content Include="Views\Questions\Create.cshtml" />
     <Content Include="Views\Questions\Delete.cshtml" />
     <Content Include="Views\Questions\Details.cshtml" />
     <Content Include="Views\Questions\Edit.cshtml" />
     <Content Include="Views\Questions\Index.cshtml" />
     <Content Include="Views\Home\Questions.cshtml" />
+    <Content Include="Views\Articles.cshtml" />
+    <Content Include="Views\Home\Articles.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
