@@ -22,6 +22,8 @@ namespace CeeLearnAndDo.Models.MyModels
 
         public bool Published { get; set; }
 
+        public string Answer { get; set; }
+
         [ScaffoldColumn(false)]
         public ApplicationUser User { get; set; }
         [ScaffoldColumn(false)]

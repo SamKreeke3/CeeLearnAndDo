@@ -43,9 +43,16 @@ namespace CeeLearnAndDo.Controllers
         {
             ViewBag.Message = "Questions page";
 
-            var questions = db.Questions.ToList();
+            var questions = db.Questions.Where(q => q.Published == true).ToList();
 
             return View(questions);
+        }
+
+        public ActionResult AskQuestion()
+        {
+            ViewBag.Message = "Ask a Question";
+
+            return View();
         }
     }
 }

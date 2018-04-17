@@ -211,6 +211,14 @@
     <Compile Include="Migrations\201804160950233_MIGRATIONHII.Designer.cs">
       <DependentUpon>201804160950233_MIGRATIONHII.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804170929201_test1.cs" />
+    <Compile Include="Migrations\201804170929201_test1.Designer.cs">
+      <DependentUpon>201804170929201_test1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804170938216_Answer-tekst.cs" />
+    <Compile Include="Migrations\201804170938216_Answer-tekst.Designer.cs">
+      <DependentUpon>201804170938216_Answer-tekst.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -342,6 +350,7 @@
     <Content Include="Views\Home\Questions.cshtml" />
     <Content Include="Views\Articles.cshtml" />
     <Content Include="Views\Home\Articles.cshtml" />
+    <Content Include="Views\Home\AskQuestion.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -364,6 +373,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804160950233_MIGRATIONHII.resx">
       <DependentUpon>201804160950233_MIGRATIONHII.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804170929201_test1.resx">
+      <DependentUpon>201804170929201_test1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804170938216_Answer-tekst.resx">
+      <DependentUpon>201804170938216_Answer-tekst.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -1,38 +1,58 @@
 ﻿/*Tyas CSS*/
 .Ts_header {
-    background-image: url('../Images/Home-header-background.jpeg');
+    min-height: 80px;
+    background-image: url(../Images/Home-header-background.jpeg);
     background-size: cover;
-    padding-top:90px;
+    padding-top: 90px;
     color: #fff;
+    padding-bottom: 0px;
 }
 .Ts_dark_overlay {
+    min-height: 900px;
     background-color: rgba(0,0,0,0.5);
     z-index: 1;
-    height: 140%;
+    height: 187%;
     margin-top: -10%;
     padding: 20%;
 }
-#Ts_navbar.top-nav-collapse {
+#Ts_footer {
+    background-image: url(../Images/Home-header-background.jpeg);
+    background-size: cover;
+    color: #fff;
+    background-position: center bottom;
+    padding: 0 !important;
+}
+.Ts_dark_overlay_footer {
+    padding: 3rem !important;
     background-color: rgba(0,0,0,0.5);
-    border: 0px solid transparent;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+.navbar-right li {
+    margin-right: 10px;
 }
 #Ts_navbar {
-    background-color: rgba(0,0,0, 0.0);
+    background-color: rgba(0,0,0,0.0) !important;
     border: 0px solid transparent;
 }
-#Ts_navbar li a{
+.navbar-nav {
+    margin-right: auto !important;
+    margin-left: 0 !important;
+}
+#Ts_navbar li a {
     color: #fff;
 }
 #Ts_navbar li a:hover {
     color: #3e699c;
 }
-.navbar-default .navbar-brand {
+#Ts_navbar .navbar-brand {
     color: #fff;
 }
-.navbar-default .navbar-brand:hover {
+#Ts_navbar .navbar-brand:hover {
     color: #3e699c;
 }
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+#Ts_navbart .navbar-nav > .active > a, #Ts_navbar .navbar-nav > .active > a:hover, #Ts_navbar .navbar-nav > .active > a:focus {
     background-color: rgba(62, 105, 156, 0.7);
 }
 #Ts_navbar .active a:hover {
@@ -54,14 +74,19 @@
     margin: auto;
     margin-bottom: 10px;
 }
-/*END Tyas CSS*/
-/*Sam CSS*/
-/*Fake bootstrap*/
-.bg-grey
-/*END fake bootstrap*/
-.sm_ceelearnanddo_logo {
-    margin-top: 10%;
-    font-family: monospace;
-    font-size: 120px;
+.Ts_Questions h2{
+    color:#000;
 }
+
+
+    /*END Tyas CSS*/
+    /*Sam CSS*/
+    /*Fake bootstrap*/
+    .bg-grey
+    /*END fake bootstrap*/
+    .sm_ceelearnanddo_logo {
+        margin-top: 10%;
+        font-family: monospace;
+        font-size: 120px;
+    }
 /*END Sam CSS*/
