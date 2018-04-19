@@ -13,7 +13,9 @@ namespace CeeLearnAndDo.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            var Articles = db.Articles.Where(a => a.Published == true).Take(3);
+
+            return View(Articles);
         }
 
         public ActionResult About()
