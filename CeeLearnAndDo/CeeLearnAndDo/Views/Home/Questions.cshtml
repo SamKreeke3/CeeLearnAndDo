@@ -4,39 +4,43 @@
     ViewBag.Title = "Questions";
 }
 
+<!-- Bootstrap core CSS -->
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
 <h2>Questions</h2>
 <h4 class="Ts_ask_a_question"><a href="/questions/create">Ask a Question...</a></h4>
 <div class="Ts_Questions_container col-lg-12">
-@foreach (var item in Model) {
-    <div class="Ts_Questions justify-content-between col-lg-9">
-        <div class="Ts_Questions_title">
-            <h2>
-                @Html.DisplayFor(modelItem => item.Title)
-            </h2>
-        </div>
-        <div class="Ts_Questions_date">
-            @Html.DisplayFor(modelItem => item.Date)
-        </div>
-        <div class="Ts_questions_content">
-            <p>
-                @Html.DisplayFor(modelItem => item.Content)
-            </p>
-        </div>
-        <div class="Ts_questions_Answer">
-            <p>
-                <strong>Answer: </strong>
-                @if (item.Answer != null)
-                {
-                     @Html.DisplayFor(modelItem => item.Answer)
-                }
-                else
-                {
-                    <strong>There is no answer yet!</strong>
-                }
+    @foreach (var item in Model)
+    {
+        <div class="Ts_Questions justify-content-between col-lg-9">
+            <div class="Ts_Questions_title">
+                <h2>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </h2>
+            </div>
+            <div class="Ts_Questions_date">
+                @Html.DisplayFor(modelItem => item.Date)
+            </div>
+            <div class="Ts_questions_content">
+                <p>
+                    @Html.DisplayFor(modelItem => item.Content)
+                </p>
+            </div>
+            <div class="Ts_questions_Answer">
+                <p>
+                    <strong>Answer: </strong>
+                    @if (item.Answer != null)
+                    {
+                        @Html.DisplayFor(modelItem => item.Answer)
+                    }
+                    else
+                    {
+                        <strong>There is no answer yet!</strong>
+                    }
 
-            </p>
-        </div>
+                </p>
+            </div>
 
-    </div>
-}
+        </div>
+    }
 </div>
