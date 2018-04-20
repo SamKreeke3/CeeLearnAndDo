@@ -70,13 +70,16 @@
     opacity: 0.5;
 }
 .Ts_Questions {
-    background-color: #fff;
     padding: 10px 20px;
     margin: auto;
     margin-bottom: 10px;
+    color: #fff;
+    background-color: rgba(0, 123, 255, 0.6);
+    box-shadow: #393939 1px 1px 1px 1px;
+}
 }
 .Ts_Questions h2{
-    color:#000;
+    color:#fff;
 }
 
 
