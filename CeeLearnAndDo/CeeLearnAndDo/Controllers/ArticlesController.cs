@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using CeeLearnAndDo.Models;
 using CeeLearnAndDo.Models.MyModels;
+using Microsoft.AspNet.Identity;
 
 namespace CeeLearnAndDo.Controllers
 {
@@ -51,6 +52,9 @@ namespace CeeLearnAndDo.Controllers
         {
             if (ModelState.IsValid)
             {
+                article.Date = DateTime.Now;
+                article.UserId = User.Identity.GetUserId();
+
                 db.Articles.Add(article);
                 db.SaveChanges();
                 return RedirectToAction("Index");

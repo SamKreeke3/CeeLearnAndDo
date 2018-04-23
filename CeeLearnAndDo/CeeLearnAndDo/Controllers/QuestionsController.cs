@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using CeeLearnAndDo.Models;
 using CeeLearnAndDo.Models.MyModels;
+using Microsoft.AspNet.Identity;
 
 namespace CeeLearnAndDo.Controllers
 {
@@ -51,9 +52,13 @@ namespace CeeLearnAndDo.Controllers
         {
             if (ModelState.IsValid)
             {
+
+                question.Date = DateTime.Now;
+                question.UserId = User.Identity.GetUserId();
+
                 db.Questions.Add(question);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("../Home/Questions");
             }
 
             return View(question);

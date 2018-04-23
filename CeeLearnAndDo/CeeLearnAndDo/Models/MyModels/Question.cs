@@ -15,13 +15,15 @@ namespace CeeLearnAndDo.Models.MyModels
         public string Title { get; set; }
 
         [Required]
+        [DataType(DataType.MultilineText)]
         public string Content { get; set; }
 
-        [Required]
-        public DateTime Date { get; set; }
+        [DataType(DataType.Date)]
+        public DateTime? Date { get; set; }
 
         public bool Published { get; set; }
 
+        [DataType(DataType.MultilineText)]
         public string Answer { get; set; }
 
         [ScaffoldColumn(false)]
