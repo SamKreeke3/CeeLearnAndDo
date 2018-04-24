@@ -78,8 +78,6 @@
 .Ts_Questions h2{
     color:#000;
 }
-
-
     /*END Tyas CSS*/
     /*Sam CSS*/
     /*Fake bootstrap*/
@@ -93,5 +91,9 @@
 
     .nav.navbar-nav.navbar-right {
         margin-left: 65% !important;
+    }
+
+    .sm_portfolio_item {
+        display: inline-block;
     }
 /*END Sam CSS*/
