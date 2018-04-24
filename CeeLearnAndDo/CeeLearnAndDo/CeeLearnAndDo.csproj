@@ -223,6 +223,22 @@
     <Compile Include="Migrations\201804171204584_Sams_Migration.Designer.cs">
       <DependentUpon>201804171204584_Sams_Migration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804231117219_test2.cs" />
+    <Compile Include="Migrations\201804231117219_test2.Designer.cs">
+      <DependentUpon>201804231117219_test2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804231123232_test3.cs" />
+    <Compile Include="Migrations\201804231123232_test3.Designer.cs">
+      <DependentUpon>201804231123232_test3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804231128079_test4.cs" />
+    <Compile Include="Migrations\201804231128079_test4.Designer.cs">
+      <DependentUpon>201804231128079_test4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804231148234_test5.cs" />
+    <Compile Include="Migrations\201804231148234_test5.Designer.cs">
+      <DependentUpon>201804231148234_test5.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -384,6 +400,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804171204584_Sams_Migration.resx">
       <DependentUpon>201804171204584_Sams_Migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804231117219_test2.resx">
+      <DependentUpon>201804231117219_test2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804231123232_test3.resx">
+      <DependentUpon>201804231123232_test3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804231128079_test4.resx">
+      <DependentUpon>201804231128079_test4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804231148234_test5.resx">
+      <DependentUpon>201804231148234_test5.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

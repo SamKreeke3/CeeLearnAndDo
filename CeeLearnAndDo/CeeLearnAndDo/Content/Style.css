@@ -6,7 +6,7 @@
     padding-top: 90px;
     color: #fff;
     padding-bottom: 0px;
-    margin-top: -3%;
+    margin-top: -4%;
 }
 .Ts_dark_overlay {
     min-height: 900px;
@@ -70,14 +70,24 @@
     opacity: 0.5;
 }
 .Ts_Questions {
-    background-color: #fff;
     padding: 10px 20px;
     margin: auto;
     margin-bottom: 10px;
+    color: #000;
+    background-color: rgba(0, 123, 255, 0.0);
+    border-bottom: 2px solid rgba(0, 123, 255, 0.6);
 }
-.Ts_Questions h2{
-    color:#000;
+.Ts_Questions_title h2 {
+    border-bottom: 1px solid rgba(0, 123, 255, 0.6);
+    display: inline;
+    padding: 0px 5px;
 }
+.Ts_Questions_title {
+    margin-bottom: 10px;
+    margin-left: -20px;
+}
+
+
     /*END Tyas CSS*/
     /*Sam CSS*/
     /*Fake bootstrap*/

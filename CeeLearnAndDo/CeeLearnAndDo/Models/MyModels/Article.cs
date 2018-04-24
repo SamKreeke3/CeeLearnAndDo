@@ -15,17 +15,19 @@ namespace CeeLearnAndDo.Models.MyModels
         public string Title { get; set; }
 
         [Required]
+        [DataType(DataType.MultilineText)]
         public string Content { get; set; }
 
         public string Photo { get; set; }
 
-        [Required]
+        [DataType(DataType.Date)]
         public DateTime Date { get; set; }
 
         public bool Published { get; set; }
 
+        [ScaffoldColumn(false)]
         public ApplicationUser User { get; set; }
-
+        [ScaffoldColumn(false)]
         public string UserId { get; set; }
     }
 }
