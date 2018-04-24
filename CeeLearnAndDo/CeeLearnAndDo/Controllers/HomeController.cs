@@ -1,7 +1,9 @@
 ﻿using CeeLearnAndDo.Models;
+using CeeLearnAndDo.Models.MyModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
 
@@ -36,9 +38,9 @@ namespace CeeLearnAndDo.Controllers
         {
             ViewBag.Message = "Articles page";
 
-            var Articles = db.Articles.Where(a => a.Published == true).ToList();
+            var articles = db.Articles.Where(a => a.Published == true).ToList();
 
-            return View(Articles);
+            return View(articles);
         }
 
         public ActionResult Questions()
@@ -52,9 +54,24 @@ namespace CeeLearnAndDo.Controllers
 
         public ActionResult AskQuestion()
         {
-            ViewBag.Message = "Ask a Question";
+            ViewBag.Message = "Ask a question";
 
             return View();
+        }
+
+        public ActionResult Article(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Article article = db.Articles.Find(id);
+            if (article == null)
+            {
+                return HttpNotFound();
+            }
+
+            return View(article);
         }
     }
 }

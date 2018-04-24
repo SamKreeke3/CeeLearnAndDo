@@ -29,24 +29,23 @@
 
             @foreach (var item in Model)
             {
-            <div class="col-lg-4 col-sm-6 portfolio-item">
-                <div class="card h-100">
-                    <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <a href="#">@Html.DisplayFor(modelItem => item.Title)</a>
-                        </h4>
-                        <p class="card-text">@Html.DisplayFor(modelItem => item.Content)</p>
+                <div class="col-lg-4 col-sm-6 portfolio-item">
+                    <div class="card h-100">
+                        <a href=""><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a href="">@Html.ActionLink(item.Title, "Article", "Article", new { id = item.Id })</a>
+                            </h4>
+                            <p class="card-text">@Html.DisplayFor(modelItem => item.Content)</p>
+                        </div>
                     </div>
                 </div>
-            </div>
             }
 
         </div>
         <!-- /.row -->
     </div>
     <!-- /.container -->
-
     <!-- Bootstrap core JavaScript -->
     <script src="~/Scripts/jquery-3.0.0.min.js"></script>
     <script src="~/Scripts/bootstrap.bundle.min.js"></script>
