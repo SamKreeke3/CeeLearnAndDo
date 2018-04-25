@@ -4,12 +4,14 @@
     ViewBag.Title = "Index";
 }
 
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
 <h2>Index</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
+<table class="table" style="color: black;">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Title)
@@ -52,7 +54,7 @@
         <td>
             @Html.DisplayFor(modelItem => item.UserId)
         </td>
-        <td>
+        <td style="display: inline-block;">
             @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
             @Html.ActionLink("Details", "Details", new { id = item.Id }) |
             @Html.ActionLink("Delete", "Delete", new { id = item.Id })
