@@ -268,6 +268,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Images\7_Blue-Ice-700x400.jpg" />
+    <Content Include="Images\facebook_circle-512.png" />
     <Content Include="Images\Ocean_Kristin-700x400.jpg" />
     <Content Include="Images\scroll-down-button.png" />
     <Content Include="Images\Home-header-background.jpeg" />
