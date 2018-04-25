@@ -111,7 +111,20 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2 class="sm_h2">Contact us</h2>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+                    <form action="/action_page.php">
+                        <fieldset>
+                            <legend>Personal information:</legend>
+                            Name:<br />
+                            <input type="text" name="firstname" placeholder="Name"><br><br />
+                            Email:<br />
+                            <input type="text" name="lastname" placeholder="user@email.com"><br><br>
+                            <div style="position: absolute; margin-left: 350px; margin-top: -155px;">
+                                Question:<br />
+                                <textarea name="question" rows="8" cols="40"></textarea>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <input type="submit" value="Submit" class="btn btn-success" style="margin-left: 822px; margin-top: 30px;">
                 </div>
             </div>
         </div>
